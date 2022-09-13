@@ -22,5 +22,4 @@ public class CandidatoPesquisa {
 		this.votos = votos;
 	}
 	
-};
-
+}

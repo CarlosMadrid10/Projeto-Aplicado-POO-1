@@ -11,9 +11,10 @@ public class ControladorCandidatoPesquisa {
 
 	public void atualizar(CandidatoPesquisa candidatoPesquisa) throws Exception {
 		if (candidatoPesquisa.getVotos() < 0) {
-			throw new Exception("Número de votos inválido.");
+			throw new Exception("N�mero de votos inv�lido.");
 		}
 		CandidatoPesquisaDao.getInstance().registrarVotos(candidatoPesquisa);
 	}
+
 	
 }

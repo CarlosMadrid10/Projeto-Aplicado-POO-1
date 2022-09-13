@@ -1,11 +1,11 @@
 package model;
 
 public class TipoPesquisa {
-	private int id;
+	int id;
 	private String descricao;
 	private String tipo;
 	private String formato;
-	
+
 	public int getId() {
 		return id;
 	}
@@ -31,4 +31,4 @@ public class TipoPesquisa {
 		this.id = id;
 	}
 	
-};
+}

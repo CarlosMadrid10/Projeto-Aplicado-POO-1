@@ -10,7 +10,7 @@ public class ControladorCandidato {
 	
 	public void salvar(Candidato candidato) throws Exception {
 		if (candidato.getNomeCandidato() == null || candidato.getNomeCandidato().length() <= 3) {
-			throw new Exception("Candidato invÃ¡lido");
+			throw new Exception("Candidato inválido");
 		}
 		CandidatoDao.getInstance().salvar(candidato);
 
@@ -18,14 +18,14 @@ public class ControladorCandidato {
 	
 	public void atualizar(Candidato candidato) throws Exception {
 		if (candidato.getNomeCandidato() == null || candidato.getNomeCandidato().length() <= 3) {
-			throw new Exception("Candidato invÃ¡lido");
+			throw new Exception("Candidato inválido");
 		}
 		CandidatoDao.getInstance().salvar(candidato);
 	}
 	
 	public void excluir(int idCandidato) throws Exception {
 		if (idCandidato == 0) {
-			throw new Exception("NÃ£o hÃ¡ candidatos a serem excluÃ­dos.");
+			throw new Exception("Não há candidatos a serem excluídos.");
 		}
 		CandidatoDao.getInstance().excluir(idCandidato);
 	}

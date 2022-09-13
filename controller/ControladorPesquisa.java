@@ -13,6 +13,7 @@ public class ControladorPesquisa {
 			throw new Exception("Erro inesperado com o id.");
 		}
 		PesquisaDao.getInstance().salvar(pesquisa);
+		PesquisaDao.getInstance().salvar(pesquisa.tipoPesquisa);
 
 	}
 	
@@ -21,11 +22,12 @@ public class ControladorPesquisa {
 			throw new Exception("Erro inesperado com o id.");
 		}
 		PesquisaDao.getInstance().salvar(pesquisa);
+		PesquisaDao.getInstance().salvar(pesquisa.tipoPesquisa);
 	}
 	
 	public void excluir(int idPesquisa) throws Exception {
 		if (idPesquisa == 0) {
-			throw new Exception("Não há pesquisas a serem excluídas.");
+			throw new Exception("N�o h� pesquisas a serem exclu�das.");
 		}
 		PesquisaDao.getInstance().excluir(idPesquisa);
 	}
